@@ -1,0 +1,12 @@
+
+> server@1.0.0 start
+> node server.js
+
+[dotenv@17.2.3] injecting env (7) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+(node:64059) [MONGOOSE] Warning: Duplicate schema index on {"email":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+(Use `node --trace-warnings ...` to show where the warning was created)
+MongoDB Connected
+Server running in development mode on port 5001
+API available at http://localhost:5001/api
+CORS Test: http://localhost:5001/cors-test
+Login token for thakuryashika14@gmail.com: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMzE4YTNmYzc5MWVjYjUxM2IwZDJjMCIsImVtYWlsIjoidGhha3VyeWFzaGlrYTE0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzgxNjMxNTU5LCJleHAiOjE3ODIyMzYzNTl9.nVfyGwcnfUrJ9aR3HmQqQ_1yDSRlPUiTaerQXiRc9_w

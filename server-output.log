@@ -1,0 +1,13 @@
+
+> server@1.0.0 start
+> node server.js
+
+[dotenv@17.2.3] injecting env (7) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+(node:32204) [MONGOOSE] Warning: Duplicate schema index on {"email":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+(Use `node --trace-warnings ...` to show where the warning was created)
+MongoDB Connected
+Server running in development mode on port 5001
+API available at http://localhost:5001/api
+CORS Test: http://localhost:5001/cors-test
+Login token for thakuryashika14@gmail.com: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMTMxNzFjODFiNzMzMjJiMmVkY2NhNCIsImVtYWlsIjoidGhha3VyeWFzaGlrYTE0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc5NjUwOTE1LCJleHAiOjE3ODAyNTU3MTV9.N9VVwc9I8zGBt6hMgLC2Sk91GyA_ObLSpNYCKFJDWas
+Login token for thakuryashika14@gmail.com: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMTMxNzFjODFiNzMzMjJiMmVkY2NhNCIsImVtYWlsIjoidGhha3VyeWFzaGlrYTE0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc5NjUxMzc3LCJleHAiOjE3ODAyNTYxNzd9.jaqhyT-MUy4Y37YMskbIrE9y85vlNT-yZLnKn0oG8zA
