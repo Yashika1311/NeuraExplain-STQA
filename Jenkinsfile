@@ -1,8 +1,9 @@
 pipeline {
     agent any
 
-     tools {
+    tools {
         nodejs 'Node18'
+        maven 'Maven3'
     }
 
     stages {
@@ -19,7 +20,6 @@ pipeline {
                 sh '''
                     cd client
                     npm install
-
                     nohup npm run dev -- --host 0.0.0.0 --port 5173 > vite.log 2>&1 &
 
                     for i in {1..30}
