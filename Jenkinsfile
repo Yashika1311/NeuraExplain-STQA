@@ -14,21 +14,23 @@ pipeline {
             }
         }
 
-        stage('Start Frontend') {
-            steps {
-                sh '''
-                    cd client
-                    npm install
-                    nohup npm run dev -- --host 0.0.0.0 --port 5173 > vite.log 2>&1 &
+       stage('Start Frontend') {
+    steps {
+        sh '''
+            cd client
+            npm install
+            nohup npm run dev -- --host 0.0.0.0 --port 5173 > vite.log 2>&1 &
 
-                    echo "Waiting for frontend..."
-                    for i in {1..30}; do
-                        curl -s http://localhost:5173 && break
-                        sleep 2
-                    done
-                '''
-            }
-        }
+            echo "Waiting for frontend..."
+
+            for i in {1..60}
+            do
+              curl -s http://localhost:5173 && echo "Frontend is UP" && break
+              sleep 2
+            done
+        '''
+    }
+}
 
         stage('Run Selenium Tests') {
             steps {
