@@ -9,7 +9,7 @@
             <class name="neuraexplain.ChatTest"/>
             <class name="neuraexplain.NewChatTest"/>
             <class name="neuraexplain.HistoryModeFilter"/>
-            <class name="neuraexplain.WrongOTPTest"/>
+            <class name="neuraexplain.WrongOtpTest"/>
         </classes>
     </test>
 
