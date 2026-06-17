@@ -5,7 +5,8 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/Yashika1311/NeuraExplain-STQA'
+                git branch: 'main',
+                    url: 'https://github.com/Yashika1311/NeuraExplain-STQA'
             }
         }
 
@@ -14,8 +15,14 @@ pipeline {
                 sh '''
                     cd client
                     npm install
+
                     nohup npm run dev -- --host 0.0.0.0 --port 5173 > vite.log 2>&1 &
-                    sleep 20
+
+                    for i in {1..30}
+                    do
+                      curl -s http://localhost:5173 && break
+                      sleep 2
+                    done
                 '''
             }
         }
