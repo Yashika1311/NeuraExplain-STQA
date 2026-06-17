@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NeuraExplain Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="NeuraExplain Tests(failed)" verbose="0">
+    <classes>
+      <class name="neuraexplain.RegisterTest">
+        <methods>
+          <include name="testRegisterPage"/>
+        </methods>
+      </class> <!-- neuraexplain.RegisterTest -->
+      <class name="neuraexplain.HistoryModeFilter">
+        <methods>
+          <include name="testHistoryModeFilter"/>
+        </methods>
+      </class> <!-- neuraexplain.HistoryModeFilter -->
+      <class name="neuraexplain.WrongOtpTest">
+        <methods>
+          <include name="testWrongOTP"/>
+        </methods>
+      </class> <!-- neuraexplain.WrongOtpTest -->
+      <class name="neuraexplain.ChatTest">
+        <methods>
+          <include name="testModeSuggestion"/>
+        </methods>
+      </class> <!-- neuraexplain.ChatTest -->
+      <class name="neuraexplain.NewChatTest">
+        <methods>
+          <include name="testNewChatResetsComposer"/>
+        </methods>
+      </class> <!-- neuraexplain.NewChatTest -->
+      <class name="neuraexplain.LoginTest">
+        <methods>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- neuraexplain.LoginTest -->
+    </classes>
+  </test> <!-- NeuraExplain Tests(failed) -->
+</suite> <!-- Failed suite [NeuraExplain Suite] -->

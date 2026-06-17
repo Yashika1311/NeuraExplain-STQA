@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-17T18:36:49 IST" name="TestSuite" finished-at="2026-06-17T18:37:17 IST" duration-ms="28048">
+    <groups>
+    </groups>
+    <test started-at="2026-06-17T18:36:49 IST" name="AllTests" finished-at="2026-06-17T18:37:17 IST" duration-ms="28048">
+      <class name="neuraexplain.NewChatTest">
+        <test-method signature="testNewChatResetsComposer()[pri:0, instance:neuraexplain.NewChatTest@bef2d72]" started-at="2026-06-17T18:37:05 IST" name="testNewChatResetsComposer" finished-at="2026-06-17T18:37:08 IST" duration-ms="2733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNewChatResetsComposer -->
+      </class> <!-- neuraexplain.NewChatTest -->
+      <class name="neuraexplain.RegisterTest">
+        <test-method signature="testRegisterPage()[pri:0, instance:neuraexplain.RegisterTest@22a637e7]" started-at="2026-06-17T18:37:11 IST" name="testRegisterPage" finished-at="2026-06-17T18:37:17 IST" duration-ms="6770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterPage -->
+      </class> <!-- neuraexplain.RegisterTest -->
+      <class name="neuraexplain.LoginTest">
+        <test-method signature="testLogin()[pri:0, instance:neuraexplain.LoginTest@5223e5ee]" started-at="2026-06-17T18:37:03 IST" name="testLogin" finished-at="2026-06-17T18:37:05 IST" duration-ms="2264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+      </class> <!-- neuraexplain.LoginTest -->
+      <class name="neuraexplain.ChatTest">
+        <test-method signature="testModeSuggestion()[pri:0, instance:neuraexplain.ChatTest@69b2283a]" started-at="2026-06-17T18:37:08 IST" name="testModeSuggestion" finished-at="2026-06-17T18:37:11 IST" duration-ms="2751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testModeSuggestion -->
+      </class> <!-- neuraexplain.ChatTest -->
+      <class name="neuraexplain.HistoryModeFilter">
+        <test-method signature="testHistoryModeFilter()[pri:0, instance:neuraexplain.HistoryModeFilter@1677d1]" started-at="2026-06-17T18:36:49 IST" name="testHistoryModeFilter" finished-at="2026-06-17T18:36:56 IST" duration-ms="6813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHistoryModeFilter -->
+      </class> <!-- neuraexplain.HistoryModeFilter -->
+      <class name="neuraexplain.WrongOtpTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:neuraexplain.WrongOtpTest@1e802ef9]" started-at="2026-06-17T18:36:56 IST" name="setUp" finished-at="2026-06-17T18:36:58 IST" duration-ms="1817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testWrongOTPShowsError()[pri:0, instance:neuraexplain.WrongOtpTest@1e802ef9]" started-at="2026-06-17T18:36:58 IST" name="testWrongOTPShowsError" finished-at="2026-06-17T18:37:03 IST" duration-ms="4872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWrongOTPShowsError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:neuraexplain.WrongOtpTest@1e802ef9]" started-at="2026-06-17T18:37:03 IST" name="tearDown" finished-at="2026-06-17T18:37:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- neuraexplain.WrongOtpTest -->
+    </test> <!-- AllTests -->
+  </suite> <!-- TestSuite -->
+</testng-results>
