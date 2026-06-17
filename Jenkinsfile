@@ -3,6 +3,7 @@ pipeline {
 
     tools {
         maven 'Maven3'
+        nodejs 'Node18'
     }
 
     environment {
@@ -11,6 +12,7 @@ pipeline {
         SELENIUM_DIR = "Selenium"
         FRONTEND_URL = "http://localhost:5173"
         BACKEND_URL = "http://localhost:5001"
+        PATH = "/opt/homebrew/bin:/usr/bin:/bin:$PATH"
     }
 
     stages {
