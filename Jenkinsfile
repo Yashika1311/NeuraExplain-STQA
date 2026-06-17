@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven3'
-    }
-
     stages {
 
         stage('Checkout') {
@@ -13,7 +9,7 @@ pipeline {
             }
         }
 
-        stage('Frontend') {
+        stage('Start Frontend') {
             steps {
                 sh '''
                     cd client
@@ -24,7 +20,7 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('Run Selenium Tests') {
             steps {
                 sh 'mvn -f Selenium/pom.xml clean test'
             }
