@@ -2,16 +2,15 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'Node18'
         maven 'Maven3'
+        nodejs 'Node20'
     }
 
     stages {
 
         stage('Checkout') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/Yashika1311/NeuraExplain-STQA'
+                git branch: 'main', url: 'https://github.com/Yashika1311/NeuraExplain-STQA'
             }
         }
 
@@ -22,10 +21,10 @@ pipeline {
                     npm install
                     nohup npm run dev -- --host 0.0.0.0 --port 5173 > vite.log 2>&1 &
 
-                    for i in {1..30}
-                    do
-                      curl -s http://localhost:5173 && break
-                      sleep 2
+                    echo "Waiting for frontend..."
+                    for i in {1..30}; do
+                        curl -s http://localhost:5173 && break
+                        sleep 2
                     done
                 '''
             }
